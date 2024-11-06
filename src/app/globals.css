@@ -3,14 +3,22 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #2a2438;
+  --foreground: #dbd8e3;
+  --decoration-color-1: #fed7aa;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  margin: 0;
+  font-size: 10px;
+  overflow-x: hidden;
+
+  @media (min-width: 640px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 18px;
   }
 }
 
@@ -18,4 +26,21 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--foreground);
+  border-radius: 5px;
 }
