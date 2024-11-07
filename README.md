@@ -21,7 +21,7 @@ A web application built with **Next.js** that allows users to filter vehicles by
 
 ### 1. Clone the Repository
 
-git clone https://github.com/your-username/car-dealer-app.git
+git clone https://github.com/kachvl/car-dealer-app.git
 cd car-dealer-app
 code car-dealer-app
 
